@@ -1,0 +1,364 @@
+{
+   "entries": {"resource": [
+      {
+         "resourceKindKey": "ClusterComputeResource",
+         "internalId": "resource:id:1_::_",
+         "adapterKindKey": "VMWARE",
+         "identifiers": [
+            {
+               "value": "domain-c10",
+               "key": "VMEntityObjectID"
+            },
+            {
+               "value": "f9bed7f9-b767-49b7-95db-da4189103f3f",
+               "key": "VMEntityVCID"
+            }
+         ],
+         "name": "DLGR-VCF-WLD1"
+      },
+      {
+         "resourceKindKey": "VcfAdapterInstance",
+         "internalId": "resource:id:2_::_",
+         "adapterKindKey": "VcfAdapter",
+         "identifiers": [{
+            "value": "vcf-sddc.nswc.navy.mil",
+            "key": "SDDCManager_Hostname"
+         }],
+         "name": "dlgr-vcf"
+      },
+      {
+         "resourceKindKey": "ClusterComputeResource",
+         "internalId": "resource:id:0_::_",
+         "adapterKindKey": "VMWARE",
+         "identifiers": [
+            {
+               "value": "domain-c10",
+               "key": "VMEntityObjectID"
+            },
+            {
+               "value": "c22df168-0fd6-45cc-a58a-c7018b7a8e64",
+               "key": "VMEntityVCID"
+            }
+         ],
+         "name": "DLGR-VCF-MGMT"
+      }
+   ]},
+   "dashboards": [{
+      "shared": false,
+      "temporary": false,
+      "hidden": false,
+      "creationTime": 1772470538747,
+      "autoswitchEnabled": false,
+      "importAttempts": 0,
+      "lastUpdateUserId": "2ca0ee85-4cf8-454c-aae1-6074f7bb89e7",
+      "columnProportion": "1-1",
+      "importComplete": true,
+      "description": "",
+      "columnCount": 1,
+      "widgets": [
+         {
+            "collapsed": false,
+            "id": "244c118b-e9cd-40a6-a057-8d83c2fa6348",
+            "gridsterCoords": {
+               "w": 12,
+               "x": 1,
+               "h": 4,
+               "y": 1
+            },
+            "type": "Scoreboard",
+            "title": "Scoreboard",
+            "config": {
+               "maxCellCount": 100,
+               "oldMetricValues": false,
+               "relationshipMode": {"relationshipMode": 0},
+               "valueSize": 24,
+               "title": "Scoreboard",
+               "boxHeight": null,
+               "showResourceName": {"showResourceName": true},
+               "roundDecimals": null,
+               "mode": {"layoutMode": "fixedView"},
+               "labelSize": 16,
+               "customFilter": {
+                  "filter": [],
+                  "excludedResources": null,
+                  "includedResources": null
+               },
+               "selfProvider": {"selfProvider": true},
+               "resInteractionMode": null,
+               "visualTheme": 3,
+               "showMetricName": {"showMetricName": true},
+               "refreshInterval": 300,
+               "resource": [],
+               "showDT": {"showDT": true},
+               "refreshContent": {"refreshContent": false},
+               "showMetricUnit": {"showMetricUnit": true},
+               "depth": 1,
+               "metric": {
+                  "mode": "resource",
+                  "resourceMetrics": [
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": "currencymonth",
+                        "resourceId": "resource:id:0_::_",
+                        "metricName": "Cost|Monthly Cluster Total Cost",
+                        "metricKey": "cost|totalCost",
+                        "handleOldColoring": false,
+                        "maxValue": "",
+                        "link": "",
+                        "resourceName": "DLGR-VCF-MGMT",
+                        "isStringMetric": false,
+                        "resourceKindId": "002006VMWAREClusterComputeResource",
+                        "label": "Total Monthly Spend",
+                        "orangeBound": null,
+                        "unit": "US$/Month",
+                        "redBound": null,
+                        "id": "extModel12117-3",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": -1,
+                        "resourceId": "resource:id:0_::_",
+                        "metricName": "Cost|Aggregated Daily Total Cost",
+                        "metricKey": "cost|aggregatedDailyTotalCost",
+                        "handleOldColoring": false,
+                        "maxValue": "",
+                        "link": "",
+                        "resourceName": "DLGR-VCF-MGMT",
+                        "isStringMetric": false,
+                        "resourceKindId": "002006VMWAREClusterComputeResource",
+                        "label": "Daily Burn Rate",
+                        "orangeBound": null,
+                        "unit": "Auto",
+                        "redBound": null,
+                        "id": "extModel12117-4",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": "currencymonth",
+                        "resourceId": "resource:id:1_::_",
+                        "metricName": "Cost|Monthly Cluster Total Cost",
+                        "metricKey": "cost|totalCost",
+                        "handleOldColoring": false,
+                        "maxValue": "",
+                        "link": "",
+                        "resourceName": "DLGR-VCF-WLD1",
+                        "isStringMetric": false,
+                        "resourceKindId": "002006VMWAREClusterComputeResource",
+                        "label": "Total Monthly Spend",
+                        "orangeBound": null,
+                        "unit": "US$/Month",
+                        "redBound": null,
+                        "id": "extModel9049-2",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": -1,
+                        "resourceId": "resource:id:1_::_",
+                        "metricName": "Cost|Aggregated Daily Total Cost",
+                        "metricKey": "cost|aggregatedDailyTotalCost",
+                        "handleOldColoring": false,
+                        "maxValue": "",
+                        "link": "",
+                        "resourceName": "DLGR-VCF-WLD1",
+                        "isStringMetric": false,
+                        "resourceKindId": "002006VMWAREClusterComputeResource",
+                        "label": "Daily Burn Rate",
+                        "orangeBound": null,
+                        "unit": "Auto",
+                        "redBound": null,
+                        "id": "extModel9952-1",
+                        "colorMethod": 1
+                     }
+                  ],
+                  "resourceKindMetrics": []
+               },
+               "showSparkline": {"showSparkline": false},
+               "boxColumns": 2,
+               "periodLength": null
+            },
+            "height": 210,
+            "states": [{
+               "value": "b%3A0",
+               "key": "perm_toolbarVisible_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_244c118b-e9cd-40a6-a057-8d83c2fa6348"
+            }]
+         },
+         {
+            "collapsed": false,
+            "id": "58bf6bd6-5627-4937-965f-9c6876af885d",
+            "gridsterCoords": {
+               "w": 12,
+               "x": 1,
+               "h": 8,
+               "y": 5
+            },
+            "type": "MetricChart",
+            "title": "Metric Chart",
+            "config": {
+               "depth": 1,
+               "refreshInterval": 300,
+               "metric": {
+                  "mode": "resource",
+                  "resourceMetrics": [
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": "currencymonth",
+                        "resourceId": "resource:id:0_::_",
+                        "metricName": "Cost|Monthly Cluster Total Cost",
+                        "metricKey": "cost|totalCost",
+                        "handleOldColoring": false,
+                        "resourceName": "DLGR-VCF-MGMT",
+                        "isStringMetric": false,
+                        "resourceKindId": "002006VMWAREClusterComputeResource",
+                        "orangeBound": null,
+                        "unit": "US$/Month",
+                        "redBound": null,
+                        "id": "extModel20118-2",
+                        "colorMethod": 2
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": "currencymonth",
+                        "resourceId": "resource:id:1_::_",
+                        "metricName": "Cost|Monthly Cluster Total Cost",
+                        "metricKey": "cost|totalCost",
+                        "handleOldColoring": false,
+                        "resourceName": "DLGR-VCF-WLD1",
+                        "isStringMetric": false,
+                        "resourceKindId": "002006VMWAREClusterComputeResource",
+                        "orangeBound": null,
+                        "unit": "US$/Month",
+                        "redBound": null,
+                        "id": "extModel20118-4",
+                        "colorMethod": 2
+                     }
+                  ],
+                  "resourceKindMetrics": []
+               },
+               "resource": [],
+               "refreshContent": {"refreshContent": false},
+               "relationshipMode": {"relationshipMode": 0},
+               "customFilter": {
+                  "filter": [],
+                  "excludedResources": null,
+                  "includedResources": null
+               },
+               "selfProvider": {"selfProvider": true},
+               "title": "Metric Chart",
+               "resInteractionMode": null
+            },
+            "height": 438,
+            "states": [
+               {
+                  "value": "s%3A%7B%22dateRange%22%3A%22last6Months%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D",
+                  "key": "permDateRange1_permMetricChart_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_58bf6bd6-5627-4937-965f-9c6876af885d"
+               },
+               {
+                  "value": "b%3A0",
+                  "key": "permBtn_thresholds_permMetricChart_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_58bf6bd6-5627-4937-965f-9c6876af885d"
+               },
+               {
+                  "value": "b%3A0",
+                  "key": "permBtn_splitGraphs_permMetricChart_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_58bf6bd6-5627-4937-965f-9c6876af885d"
+               },
+               {
+                  "value": "b%3A1",
+                  "key": "perm_toolbarVisible_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_58bf6bd6-5627-4937-965f-9c6876af885d"
+               },
+               {
+                  "value": "o%3A",
+                  "key": "permMetricChart_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_58bf6bd6-5627-4937-965f-9c6876af885d"
+               },
+               {
+                  "value": "b%3A0",
+                  "key": "permBtn_dynamicThresholds_permMetricChart_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_58bf6bd6-5627-4937-965f-9c6876af885d"
+               },
+               {
+                  "value": "b%3A0",
+                  "key": "permBtn_pan_permMetricChart_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_58bf6bd6-5627-4937-965f-9c6876af885d"
+               },
+               {
+                  "value": "b%3A1",
+                  "key": "permBtn_zoomTheView_permMetricChart_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_58bf6bd6-5627-4937-965f-9c6876af885d"
+               },
+               {
+                  "value": "b%3A0",
+                  "key": "permBtn_showEntireDT_permMetricChart_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_58bf6bd6-5627-4937-965f-9c6876af885d"
+               },
+               {
+                  "value": "b%3A0",
+                  "key": "permBtn_zoomAllGraphs_permMetricChart_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_58bf6bd6-5627-4937-965f-9c6876af885d"
+               }
+            ]
+         },
+         {
+            "collapsed": false,
+            "id": "b54150de-0491-40f2-80af-2d14a7ee9ff6",
+            "gridsterCoords": {
+               "w": 12,
+               "x": 1,
+               "h": 11,
+               "y": 13
+            },
+            "type": "View",
+            "title": "Executive Cost Detail View",
+            "config": {
+               "refreshInterval": 300,
+               "resource": {
+                  "resourceId": "resource:id:2_::_",
+                  "traversalSpecId": "",
+                  "resourceName": "dlgr-vcf",
+                  "resourceKindId": "002010VcfAdapterVcfAdapterInstance",
+                  "id": "Ext.vcops.chrome.model.Resource-48"
+               },
+               "traversalSpecId": null,
+               "refreshContent": {"refreshContent": false},
+               "isUpdatedView": true,
+               "chartViewItems": [],
+               "selectFirstRow": {"selectFirstRow": false},
+               "selfProvider": {"selfProvider": true},
+               "title": "Executive Cost Detail View",
+               "viewDefinitionId": "3ad25d0e-0d9a-4eeb-9880-e02471728b4f"
+            },
+            "height": 609,
+            "states": [
+               {
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253ApermTableView_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6-column-0%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6-column-cost%2525257CmonthlyTotalCost1%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6-column-cost%2525257CmonthlyProjectedCost2%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A67%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6-column-cost%2525257CeffectiveDailyCost3%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6-column-cost%2525257CeffectiveDailyCpuCost4%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6-column-cost%2525257CeffectiveDailyMemoryCost5%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6-column-cost%2525257CeffectiveDailyStorageCost6%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6-column-undefined7%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6-column-undefined8%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6-column-undefined9%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6-column-undefined10%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6-column-undefined11%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6-column-undefined12%25255Ehidden%25253Db%2525253A0",
+                  "key": "permTableView_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6"
+               },
+               {
+                  "value": "n%3A25",
+                  "key": "permPageSize_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6"
+               },
+               {
+                  "value": "s%3A%7B%22minType%22%3A%22.TimeIntervalControl%22%2C%22advancedTimeMode%22%3Afalse%2C%22fromTime%22%3Anull%2C%22unit%22%3A%22DAYS%22%2C%22count%22%3A7%2C%22priorUnit%22%3Anull%2C%22priorCount%22%3Anull%2C%22startSubUnit%22%3Anull%2C%22startPeriod%22%3Anull%2C%22toTime%22%3Anull%2C%22endUnit%22%3Anull%2C%22endCount%22%3Anull%2C%22endSubUnit%22%3Anull%2C%22endPeriod%22%3Anull%2C%22isRealTimeData%22%3Anull%2C%22mondayHours%22%3A%5B%5D%2C%22tuesdayHours%22%3A%5B%5D%2C%22wednesdayHours%22%3A%5B%5D%2C%22thursdayHours%22%3A%5B%5D%2C%22fridayHours%22%3A%5B%5D%2C%22saturdayHours%22%3A%5B%5D%2C%22sundayHours%22%3A%5B%5D%7D",
+                  "key": "permSelectedDate_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6"
+               },
+               {
+                  "value": "b%3A0",
+                  "key": "perm_toolbarVisible_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6"
+               },
+               {
+                  "value": "b%3A0",
+                  "key": "perm_isDashboardTime_widget_cddc9a83-f147-434d-94fa-23e01c7b21f4_b54150de-0491-40f2-80af-2d14a7ee9ff6"
+               }
+            ]
+         }
+      ],
+      "userId": "2ca0ee85-4cf8-454c-aae1-6074f7bb89e7",
+      "states": [],
+      "homeTab": false,
+      "name": "Executive Cost Dashboard",
+      "gridsterMaxColumns": 12,
+      "rank": 0,
+      "disabled": false,
+      "id": "cddc9a83-f147-434d-94fa-23e01c7b21f4",
+      "locked": false,
+      "dashboardNavigations": {},
+      "widgetInteractions": [],
+      "lastUpdateTime": 1772577513150
+   }],
+   "uuid": "4f21d4e6-a055-4e0e-b3b4-48539e1a6411"
+}
